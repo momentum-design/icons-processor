@@ -1,0 +1,40 @@
+{
+  "name": "icons-processor",
+  "version": "0.0.1",
+  "scripts": {},
+  "author": {
+    "name": "Paul Jeter",
+    "email": "pajeter@cisco.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://wwwin-github.cisco.com/collab-ui/icons-server"
+  },
+  "bugs": {
+    "url": "https://wwwin-github.cisco.com/collab-ui/icons-server/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^2.1.1",
+    "aws-sdk": "^2.315.0",
+    "axios": "^0.18.0",
+    "better-queue": "^3.8.6",
+    "body-parser": "^1.18.2",
+    "chokidar": "^2.0.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.2",
+    "fs-extra": "^5.0.0",
+    "lodash": "^4.17.4",
+    "mime": "^2.3.1",
+    "mongoose": "^5.0.8",
+    "mongoose-findorcreate": "^3.0.0",
+    "mongoose-unique-validator": "^2.0.0",
+    "simple-git": "^1.96.0",
+    "svgo": "^0.7.2",
+    "winston": "^2.4.0"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  }
+}
