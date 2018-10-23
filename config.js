@@ -1,5 +1,5 @@
 config = {
-  tempPath: './.temp',
+  tempPath: '.temp',
   iconsDirectory: 'icons/',
   baseFormats: ['.eps', '.pdf', '.svg'],
   iosFormats: ['@3x*ios.png', '@2x*ios.png', '*ios.png'],

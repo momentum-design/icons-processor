@@ -1,6 +1,14 @@
 require('dotenv').config();
 const AWS = require('aws-sdk');
+const proxy = require('proxy-agent')
 const { logger } = require('./logger');
+
+AWS.config.update({
+  httpOptions: {
+    agent: proxy(process.env.HTTPS_PROXY)
+  }
+});
+
 const s3 = new AWS.S3({
   apiVersion: '2006-03-01',
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
