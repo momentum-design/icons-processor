@@ -26,9 +26,10 @@ const iconsDbQueue = new Queue(processDbQueue);
 
 fs.ensureFile(logFile)
   .then(() => {
+    console.log('starting...')
     cron
-      .schedule('* 22 * * *', () => {
-        pushCommits();
+      .schedule('0 22 * * *', async () => {
+        await pushCommits();
       });
     chokidar
       .watch('../uploads', {

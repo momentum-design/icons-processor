@@ -3,6 +3,7 @@ const config = require('../config');
 const cron = require('node-cron');
 const gitP = require('simple-git/promise');
 const git = gitP(config.gitWorkingDir);
+const { logger } = require('./logger');
 const remote = `https://${process.env.GITHUB_USER}:${process.env.GITHUB_TOKEN}@${process.env.GITHUB_URL}`;
 
 const checkForSvgFileChanges = async (changedFiles) => {
