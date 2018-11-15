@@ -2,7 +2,7 @@ const axios = require('axios');
 require('dotenv').config();
 const { logger } = require('./logger');
 
-const iconsUrl = process.env.ICONS_API_URL || 'http://127.0.0.1:8080/api/icons';
+const iconsUrl = process.env.ICONS_API_URL || 'http://127.0.0.1:8080/icons';
 
 const addIconToDb = async (iconInfo) => {
   const iconData = {
