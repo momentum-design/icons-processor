@@ -10,9 +10,9 @@ config = {
     '*adr_xxhdpi.png',
     '*adr_xxxhdpi.png',
   ],
-  svgDirectory: '../automatetest/svg',
+  svgDirectory: '../collab-ui/icons/svg',
   backupDirectory: './backup',
-  gitWorkingDir: '../automatetest',
+  gitWorkingDir: '../collab-ui/icons',
   logsDirectory: './logs'
 };
 

@@ -11,7 +11,11 @@ const createCommit = async iconInfo => {
   const gitChangeType = gitStatus.modified.includes(svgFilePath)
     ? 'update'
     : 'add';
-  const commitMessage = `feat(icons): ${gitChangeType} ${variation}`;
+  const commitMessage = [
+    `feat(icons): ${gitChangeType} ${variation}`,
+    '[skip ci]'
+  ];
+
   try {
     await git.addConfig('user.username', process.env.GITHUB_USER);
     await git.addConfig('user.password', process.env.GITHUB_TOKEN);

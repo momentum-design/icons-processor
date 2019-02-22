@@ -25,7 +25,8 @@ const pushCommits = async () => {
       await git.stash();
     }
     if(status.behind) {
-      await git.pull('origin', 'master', { '--rebase': 'true' });
+      await git.fetch('origin', 'master');
+      await git.rebase(['--onto', 'origin/master']);
     }
     await git.push('origin', 'master');
     logger.info('Commits Pushed');
