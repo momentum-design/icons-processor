@@ -1,6 +1,6 @@
 {
   "name": "icons-processor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {},
   "author": {
     "name": "Paul Jeter",
@@ -15,7 +15,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "archiver": "^2.1.1",
     "aws-sdk": "^2.315.0",
     "axios": "^0.18.0",
     "better-queue": "^3.8.6",
@@ -24,6 +23,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.2",
     "fs-extra": "^5.0.0",
+    "jszip": "^3.2.1",
     "lodash": "^4.17.4",
     "mime": "^2.3.1",
     "node-cron": "^2.0.1",

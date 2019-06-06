@@ -6,7 +6,7 @@ const getIconInfo = async file => {
   const iconInfo = {};
   const fileInfo = path.parse(file);
   const iconNames = await processNames(fileInfo.name, fileInfo.ext);
-  iconInfo.dir = fileInfo.dir;
+  iconInfo.dir = path.resolve(__dirname, '../', fileInfo.dir);
   iconInfo.fileName = fileInfo.base;
   iconInfo.variation = iconNames.variation;
   iconInfo.format = iconNames.format;
