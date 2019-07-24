@@ -1,5 +1,4 @@
 const _ = require('lodash');
-const archiver = require('archiver');
 const config = require('../config');
 const fs = require('fs-extra');
 const JSZip = require('jszip');

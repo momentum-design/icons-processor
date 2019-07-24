@@ -29,7 +29,7 @@
     "node-cron": "^2.0.1",
     "proxy-agent": "^3.0.3",
     "simple-git": "^1.96.0",
-    "svgo": "^0.7.2",
+    "svgo": "^1.3.0",
     "winston": "^2.4.0"
   },
   "engines": {

@@ -33,20 +33,17 @@ const config = {
 };
 
 const optimizeSvg = file => {
-  return new Promise((resolve, reject) => {
-    const svgo = new SVGOptim(config);
-    const fileContents = fs.readFileSync(file);
+  const svgo = new SVGOptim(config);
+  const fileContents = fs.readFileSync(file);
+  const filename = `svg/${file.substring(file.lastIndexOf('/') + 1)}`;
 
-    svgo.optimize(fileContents, result => {
-      if (result.error) {
-        reject(logger.error('SVGO Error', result.error));
-      }
+  svgo
+    .optimize(fileContents, {path: file})
+    .then(result => {
       const fileData = result.data;
-      const filename = `svg/${file.substring(file.lastIndexOf('/') + 1)}`;
-      fs.writeFileSync(file, fileData);
-      resolve(logger.info(`${file} optimized!`));
-    });
-  });
+      return logger.info(`${file} optimized!`);
+    })
+    .catch(error => logger.error('SVGO Error', result.error));
 };
 
 const optimizeSvgFiles = async iconInfo => {
