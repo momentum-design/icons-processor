@@ -10,9 +10,9 @@ config = {
     '*adr_xxhdpi.png',
     '*adr_xxxhdpi.png',
   ],
-  svgDirectory: '../collab-ui/icons/svg',
+  svgDirectory: '../momentum-ui/icons/svg',
   backupDirectory: './backup',
-  gitWorkingDir: '../collab-ui/icons',
+  gitWorkingDir: '../momentum-ui/icons',
   logsDirectory: './logs'
 };
 

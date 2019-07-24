@@ -2,10 +2,11 @@
 ###################
 node_modules
 npm-debug.log*
-package-lock.json
+# package-lock.json
 .bower-cache
 .bower-registry
 yarn-error.log
+yarn.lock
 
 # Ignore IDE files #
 ####################
