@@ -28,7 +28,7 @@ fs.ensureFile(logFile)
   .then(() => {
     console.log('starting...')
     cron
-      .schedule('0 22 * * *', async () => {
+      .schedule('0 4 * * *', async () => {
         await pushCommits();
       });
     chokidar
