@@ -54,7 +54,7 @@ fs.ensureFile(logFile)
           icons[variation] = [format];
         }
         if (
-          icons[variation].length === 11 &&
+          icons[variation].length === 10 &&
           checkForAllFileFormats(iconInfo)
         ) {
           try {

@@ -1,7 +1,7 @@
 config = {
   tempPath: '.temp',
   iconsDirectory: 'icons/',
-  baseFormats: ['.eps', '.pdf', '.svg'],
+  baseFormats: ['.pdf', '.svg'],
   iosFormats: ['@3x*ios.png', '@2x*ios.png', '*ios.png'],
   androidFormats: [
     '*adr_hdpi.png',
