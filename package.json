@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.315.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "better-queue": "^3.8.6",
     "body-parser": "^1.18.2",
     "chokidar": "^2.0.2",
